@@ -1,4 +1,6 @@
 
+//ä¸­å€¼è¡¨è¾¾å¼çš„è®¡ç®—
+
 #include<iostream>
 #include<string>
 #include<malloc.h>
@@ -42,7 +44,7 @@ void init2(SeqStack2 *L) {
 int push(SeqStack *L, int x) {
 	
     if (L->top - L->base >= L->stacksize) {
-        cout << "Õ»Âú£¬ÈëÕ»Ê§°Ü!" << endl;
+        cout << "æ ˆæ»¡ï¼Œå…¥æ ˆå¤±è´¥!" << endl;
         return 0;
     }
 
@@ -69,7 +71,7 @@ void pushstr(SeqStack2 *L, char x) {
 int pop(SeqStack *L) {
 	
     if (L->base == L->top) {
-        cout << "Õ»¶¥Îª¿Õ£¬Ã»ÓĞÔªËØ!" << endl;
+        cout << "æ ˆé¡¶ä¸ºç©ºï¼Œæ²¡æœ‰å…ƒç´ !" << endl;
         return 0;
     }
 
@@ -83,7 +85,7 @@ int pop(SeqStack *L) {
 char popstr(SeqStack2 *L) {
 	
     if (L->base == L->top) {
-        cout << "Õ»¶¥Îª¿Õ£¬Ã»ÓĞÔªËØ!" << endl;
+        cout << "æ ˆé¡¶ä¸ºç©ºï¼Œæ²¡æœ‰å…ƒç´ !" << endl;
         exit(0);
     }
 
@@ -146,7 +148,7 @@ int main() {
 
     pushstr(&str, '#');
 
-    cout << "ÇëÊäÈë×Ö·û´®£¬²¢ÔÚ×Ö·û´®ºó¼ÓÉÏ#ºÅ!" << endl;
+    cout << "è¯·è¾“å…¥å­—ç¬¦ä¸²ï¼Œå¹¶åœ¨å­—ç¬¦ä¸²ååŠ ä¸Š#å·!" << endl;
 
     ch = getchar();
     
